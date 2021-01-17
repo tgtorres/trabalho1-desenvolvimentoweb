@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Mural de recados</title>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <header id="home">    
+                <div class="menu">
+                    <nav>
+                        <label class="logo-menu">Mural de Recados</label>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#deixar-recado">Deixar Recado</a></li>
+                            <li><a href="#recados">Ver Recados</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="fundo">
+                    <img src="img/img-fundo.png" alt="">
+                </div>
+
+                <div class="banner">
+                    <h1>Mural de Recados</h1>
+                    <button class="btn-escrever" onclick="window.location.href='#deixar-recado'">Escrever um recado</button>
+                    <p><button class="btn-preto" id="btn-fundo-preto">Deixar Fundo Preto</button></p>
+                    <p><button class="btn-cinza" id="btn-fundo-cinza">Deixar Fundo Cinza</button></p>
+                    <p><button class="btn-azul" id="btn-fundo-azul">Deixar Fundo Azul</button></p>
+                </div>
+            </header>
+
+            <section class="sessao-escrever-recado" id="deixar-recado">
+                <div class="conteiner-escrever">
+                    <div class="fundo-escrever"></div>
+                    <div class="conteudo-escrever">
+                        <h1>Escreva o seu recado ;D</h1>
+                        <form>
+                            <div class="input-group">
+                                <input required type="text" class="field" id="nome">
+                                <label for="nome" class="field-label">Nome</label>
+                            </div>
+                            <div class="input-group">
+                                <textarea required class="field" id="mensagem"></textarea>
+                                <label for="mensagem" class="field-label">Recado</label>
+                            </div>
+                            <button type="button"  class="btn-submit" id="btn-adicionar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ver-recados" id="recados">
+                <div class="ver-recados-titulo">
+                    <h1>Recados</h1>
+                </div>
+                <div class="lista-recados">
+                    <table id="tabela">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Recado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer>
+                <div class="conteudo-rodape">
+                    <button type="button"  class="btn-rodape" id="btn-rodape">Créditos</button>
+                </div>
+            </footer>
+
+        </div>
+
+        <script src="JS/funcao-cores.js"></script>
+        <script src="JS/funcao-recados.js"></script>
+        <script src="JS/funcao-creditos.js"></script>
+
+    </body>
+</html>
